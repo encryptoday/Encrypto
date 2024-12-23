@@ -15,8 +15,8 @@
  _______________________________________________
 / Developer: Md. Masum Miah                     \
 | Programming Language: C++, Bash Scripting      |
-| Operating System: Linux 		             |
-\ Database: SQLite3                      		/
+| Operating System: Linux 		         |
+\ Database: SQLite3                      	 /
  -----------------------------------------------
    \
     \                                  ___-------___
@@ -40,11 +40,11 @@
 
 
 
-1. Introduction
+# 1. Introduction
 
 Encrypto is a cryptography-based puzzle game designed to engage users in learning about classical encryption techniques. Built in C++ for high performance and optimized for Linux, Encrypto provides an immersive, educational experience where players attempt to solve puzzles by deciphering encoded messages. The game utilizes a series of historical cryptographic methods, presenting players with an interactive storyline that introduces cryptography with challenges that grow progressively more difficult.
 
-Motivation
+## Motivation
 
 C++ was chosen for this project due to its speed and object-oriented capabilities, making it ideal for a game requiring rapid data processing, real-time feedback, and a smooth user experience. Linux was selected as the platform because it aligns with the open-source ethos and as a global knowledge sharing platform. Having used Linux for over eight years, this project also serves as a personal contribution to the Linux community, reflecting both expertise and support for the open-source movement.
 
