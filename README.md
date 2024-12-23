@@ -124,9 +124,9 @@ Encrypto includes 11 levels, each employing a different encryption algorithm, or
 
 Each cipher’s encryption and decryption processes are implemented in unique functions, totaling 22 encryption/decryption functions for the game. Players advance through increasingly complex encryption schemes, deepening their understanding of classical cryptography concepts.
 
-				===============================================================
-				Level : 3        Scores : 150        Lives : 9
-				===============================================================
+		===============================================================
+			Level : 3        Scores : 150        Lives : 9
+		===============================================================
 				                                             
 				       / Highest Scores  \
 				       |                 |
