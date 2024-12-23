@@ -49,7 +49,7 @@ Encrypto is a cryptography-based puzzle game designed to engage users in learnin
 C++ was chosen for this project due to its speed and object-oriented capabilities, making it ideal for a game requiring rapid data processing, real-time feedback, and a smooth user experience. Linux was selected as the platform because it aligns with the open-source ethos and as a global knowledge sharing platform. Having used Linux for over eight years, this project also serves as a personal contribution to the Linux community, reflecting both expertise and support for the open-source movement.
 
 
-2. Game Structure and User Interface
+# 2. Game Structure and User Interface
 
 After launching Encrypto, players are presented with a main menu featuring following options:
 
@@ -61,15 +61,15 @@ After launching Encrypto, players are presented with a main menu featuring follo
 
 
 
-2.1 Game Flow and Progression
+## 2.1 Game Flow and Progression
 
 New Game: The player begins with a storyline introduction (visible only at level one), entering their name to personalize the experience. Encrypto remembers the player’s name by inserting into a database, creating a tailored interaction throughout gameplay.
 
 Continue Game: This option becomes available only after completing the first level, allowing players to resume from their previous level.  
   
 Highest Scores: Displays the player’s best scores stored in an SQLite3 database, fostering a competitive element and tracking progress.
-
-                                              _______________________________
+```
+                              _______________________________
                              /  Welcome to encrypto          \
                              |                               |
                              | 0. Continue Game              |
@@ -90,13 +90,13 @@ Highest Scores: Displays the player’s best scores stored in an SQLite3 databas
                                              ||----w |
                                              ||     ||
 
-
+```
 Random Cryptographic Facts: Displays cryptographic from a local text file, providing educational snippets about cryptography's history and real-world applications.
 
 How to Play: Details the game rules and objectives, instructing players on gameplay mechanics. This information is fetched from a text file within the game directory.
 
 
-3. Gameplay Mechanics and Scoring
+# 3. Gameplay Mechanics and Scoring
 
 In Encrypto, each level challenges the player to decrypt a cipher text using hints, logical deduction, and knowledge of cryptographic methods. The core mechanics include:
 
@@ -106,7 +106,7 @@ Feedback Mechanism: Incorrect answers prompt feedback to guide the player. After
 
 Lives System: Players have seven attempts to decode each level’s cipher. Upon exhausting their lives, the game ends, and the player returns to the main menu.
 
-3.1 Levels and Encryption Algorithms
+## 3.1 Levels and Encryption Algorithms
 
 Encrypto includes 11 levels, each employing a different encryption algorithm, ordered by difficulty:
 
@@ -124,43 +124,43 @@ Encrypto includes 11 levels, each employing a different encryption algorithm, or
 
 Each cipher’s encryption and decryption processes are implemented in unique functions, totaling 22 encryption/decryption functions for the game. Players advance through increasingly complex encryption schemes, deepening their understanding of classical cryptography concepts.
 
-===============================================================
-Level : 3        Scores : 150        Lives : 9
-===============================================================
-                                             
-       / Highest Scores  \
-       |                 |
-       | 1st : 1075      |
-       |                 |
-       | 2nd : 975       |
-       |                 |
-       | 3rd : 950       |
-       |                 |
-       | 4th : 900       |
-       |                 |
-       \ 5th : 875       /
-        -----------------
-        \     ,-.      .-,
-         \    |-.\ __ /.-|
-          \   \  `    `  /
-               /_     _ \
-             <  _`q  p _  >
-             <.._=/  \=_. >
-                {`\()/`}`\
-                {      }  \
-                |{    }    \
-                \ '--'   .- \
-                |-      /    \
-                | | | | |     ;
-                | | |.;.,..__ |
-              .-"";`         `|
-             /    |           /
-            `-../____,..---'`
- 4. Database Integration
+				===============================================================
+				Level : 3        Scores : 150        Lives : 9
+				===============================================================
+				                                             
+				       / Highest Scores  \
+				       |                 |
+				       | 1st : 1075      |
+				       |                 |
+				       | 2nd : 975       |
+				       |                 |
+				       | 3rd : 950       |
+				       |                 |
+				       | 4th : 900       |
+				       |                 |
+				       \ 5th : 875       /
+				        -----------------
+				        \     ,-.      .-,
+				         \    |-.\ __ /.-|
+				          \   \  `    `  /
+				               /_     _ \
+				             <  _`q  p _  >
+				             <.._=/  \=_. >
+				                {`\()/`}`\
+				                {      }  \
+				                |{    }    \
+				                \ '--'   .- \
+				                |-      /    \
+				                | | | | |     ;
+				                | | |.;.,..__ |
+				              .-"";`         `|
+				             /    |           /
+				            `-../____,..---'`
+# 4. Database Integration
 
 Encrypto utilizes SQLite3 for data storage, specifically to manage player scores and progress. This allows the game to retain high scores and continue-game data, enhancing the user experience by providing a sense of achievement and continuity. The database structure is minimalistic, focusing solely on essential information to maintain fast, lightweight interactions.
 
-5. ASCII arts and animation
+# 5. ASCII arts and animation
 
 All the ASCII arts in this game is created using a linux program, Cowsay, which is written in Perl. It was created by Tony Monroe in 2002. It is an open source program and falls under GNU General Public License (GPL).
 
@@ -168,13 +168,13 @@ The steam locomotive that runs after successful completion of a level is another
 
 The loading matrix animation is created using another open source program, Cmatrix, originally created by Chris Allegretta and maintained by Abishek V. Menon. This program also falls under GNU General Public License (GPL).  
 
-5. Storyline and Educational Value
+# 6. Storyline and Educational Value
 
-5.1 Storyline
+## 6.1 Storyline
 
 The narrative of Encrypto introduces an antagonist organization, the Gunda, which threatens global privacy by possessing powerful decryption technology. The player, guided by a character known as The Keeper, must prevent the Gunda from abusing their knowledge by solving encrypted messages and uncovering clues to reveal their secrets. Each level unveils new insights and heightens the importance of the mission, with the ultimate goal of safeguarding personal privacy and freedom.
 
-5.2 Educational Elements
+## 6.2 Educational Elements
 
 Each level’s encryption challenge is rooted in classical cryptography, immersing players in historical ciphers used for secure communication. The Random Cryptographic Facts section and contextual hints provide players with background knowledge, combining education with entertainment.
 
@@ -182,11 +182,11 @@ Each level’s encryption challenge is rooted in classical cryptography, immersi
 
 
 
-6. Conclusion and Future Work
+# 7. Conclusion and Future Work
 
 Encrypto demonstrates the power of games in education, especially within the field of cybersecurity and cryptography. By presenting cryptographic concepts through interactive puzzles and a compelling storyline, this game has the potential to raise awareness and understanding of information security among players.
 
-Future Enhancements
+## Future Enhancements
 
 Expanded Storyline: Further narrative development to enrich player engagement.
 Additional Levels and Ciphers: Incorporating more advanced ciphers, including modern techniques like RSA and Diffie-Hellman.
@@ -194,10 +194,10 @@ Multiplayer Mode: Introducing a collaborative mode where players can compete or 
 Visual Interface: Potentially developing a GUI to broaden the game's accessibility and appeal.
 
 
-Appendices
+# Appendices
 
-Appendix A: Encryption and Decryption functions for Caesar Cipher
-
+## Appendix A: Encryption and Decryption functions for Caesar Cipher
+```C++
 string ceaserEnc(){
 	string msg = "key is freedom";
 	string cipherText;
@@ -219,10 +219,11 @@ string ceaserDec(string cipherText){
 	}
 	return cipherText;
 }
+```
 
 
-
-Appendix B: Database Schema for SQLite3 Integration.
+## Appendix B: Database Schema for SQLite3 Integration.
+```C++
 
 void variablesInit(){
 	sqlite3# db;
@@ -274,9 +275,11 @@ static int callback0(void# data, int argc, char## argv, char## azColName){
 	return 0;
 }
 
+```
 
+## Appendix C: Excerpts from "How to Play" and "Random Cryptographic Facts."
 
-Appendix C: Excerpts from "How to Play" and "Random Cryptographic Facts."
+```c++
 
 ifstream file;
 	string str, bodyText;
@@ -338,6 +341,4 @@ void beautifyText(string str){
 
 }
 
-
-
-
+```
