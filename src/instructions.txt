@@ -1,0 +1,6 @@
+Welcome to Encrypto! You will embark on a thrilling journey in 11 challenging levels. In each level, you will face a cipher text created using traditional encryption schemes. Your mission is to crack the cipher to complete the level.
+#1 You have a total of 3 hints available per game, with one hint provided at the start of each level.
+#2 Utilizing a hint will result in a 25% reduction in your score for that level.
+#3 Successfully completing a level awards you 100 points.
+#4 You start each level with 7 lives.
+#5 Any remaining lives at the end of a level will carry over to the next level, adding to your total.

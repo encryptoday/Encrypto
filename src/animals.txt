@@ -1,0 +1,14 @@
+cock
+cheese
+daemon
+elephant
+cower
+gnu
+milk
+moose
+pony
+snowman
+stegosaurus
+stimpy
+turtle
+tux
