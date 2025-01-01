@@ -1,6 +1,6 @@
 #!/bin/bash
 
-packages=("cowsay" "sysvbanner" "libsqlite3-dev" "cmatrix" "toilet" "libncurses-dev")
+packages=("cowsay" "sysvbanner" "libsqlite3-dev" "cmatrix" "toilet" "libncurses-dev" "g++")
 
 for pkg in "${packages[@]}"; do
 	if(which $pkg | grep -q "/" || dpkg --list |grep -q "$pkg"); then 
